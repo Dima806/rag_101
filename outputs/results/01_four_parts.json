@@ -1,0 +1,35 @@
+{
+  "mode": "ollama:qwen2.5:0.5b",
+  "question": "What is the capital city of Volara?",
+  "gold_answer": "Thornmouth",
+  "answer": "The capital city of Volara is Thornmouth.",
+  "groundedness": 1.0,
+  "retrieved": [
+    {
+      "doc": "doc01",
+      "score": 0.5955863852122182,
+      "text": "The island of Volara is the administrative centre of the Zephyr Archipelago. Its capital city is Thornmouth, which hosts the Archipelago Assembly."
+    },
+    {
+      "doc": "doc02",
+      "score": 0.5658094216914555,
+      "text": "Volara has a population of 48,000 residents and covers an area of 310 square kilometres."
+    },
+    {
+      "doc": "doc10",
+      "score": 0.16362993514887958,
+      "text": "Education in the archipelago is free until the age of 18. The oldest school, Thornmouth Academy, was founded in 1842."
+    },
+    {
+      "doc": "doc06",
+      "score": 0.15410216011237826,
+      "text": "Pelagos is the only island in the archipelago with an active volcano, Mount Sear, which last erupted in 1911."
+    },
+    {
+      "doc": "doc11",
+      "score": 0.14885380042851803,
+      "text": "The island of Suncrest grows most of the archipelago's citrus. Its orchards produce about 9,000 tonnes of oranges each year."
+    }
+  ],
+  "prompt": "You are a careful assistant. Answer the question using ONLY the context below.\nIf the context does not contain the answer, reply exactly: \"The documents do not contain this information.\"\nDo not use any outside knowledge. Keep the answer short.\n\nContext:\n[1] The island of Volara is the administrative centre of the Zephyr Archipelago. Its capital city is Thornmouth, which hosts the Archipelago Assembly.\n\n[2] Volara has a population of 48,000 residents and covers an area of 310 square kilometres.\n\n[3] Education in the archipelago is free until the age of 18. The oldest school, Thornmouth Academy, was founded in 1842.\n\n[4] Pelagos is the only island in the archipelago with an active volcano, Mount Sear, which last erupted in 1911.\n\n[5] The island of Suncrest grows most of the archipelago's citrus. Its orchards produce about 9,000 tonnes of oranges each year.\n\nQuestion: What is the capital city of Volara?\nAnswer:"
+}

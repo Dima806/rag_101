@@ -1,0 +1,59 @@
+{
+  "mode": "ollama:qwen2.5:0.5b",
+  "model_swap": [
+    {
+      "model": "qwen2.5:0.5b",
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "model": "qwen2.5:1.5b",
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 0.8333333333333334
+    }
+  ],
+  "grounding": [
+    {
+      "question": "What is the capital city of Volara?",
+      "answer": "The capital city of Volara is Thornmouth.",
+      "gold": "Thornmouth",
+      "correct": true,
+      "groundedness": 1.0
+    },
+    {
+      "question": "How tall is the Graywing windmill?",
+      "answer": "The Graywing windmill stands 62 metres high.",
+      "gold": "62 metres",
+      "correct": true,
+      "groundedness": 1.0
+    },
+    {
+      "question": "What currency does the Zephyr Archipelago use?",
+      "answer": "The Zephyr Archipelago uses the zeph currency.",
+      "gold": "the zeph",
+      "correct": true,
+      "groundedness": 1.0
+    },
+    {
+      "question": "When did Mount Sear last erupt?",
+      "answer": "1911",
+      "gold": "1911",
+      "correct": true,
+      "groundedness": 1.0
+    },
+    {
+      "question": "How many members does the Archipelago Assembly have?",
+      "answer": "The Archipelago Assembly has 60 members.",
+      "gold": "60 members",
+      "correct": true,
+      "groundedness": 1.0
+    },
+    {
+      "question": "Where does the silver tern nest?",
+      "answer": "The silver tern nests exclusively on the cliffs of Pelagos.",
+      "gold": "the cliffs of Pelagos",
+      "correct": true,
+      "groundedness": 1.0
+    }
+  ]
+}

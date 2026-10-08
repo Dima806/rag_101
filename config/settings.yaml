@@ -1,0 +1,39 @@
+# Single source of knobs for rag_101. Everything configurable lives here;
+# src/config.py loads and validates it. Env vars (RAG_SEED, RAG_RETRIEVE__TOP_K, ...)
+# override on load.
+
+seed: 42
+
+chunk:
+  strategy: recursive        # fixed | sentence | recursive | semantic
+  size: 400                  # target max characters per chunk
+  overlap: 50                # character overlap for fixed/recursive
+  semantic_threshold: 0.55   # cosine similarity to keep adjacent sentences together
+
+embed:
+  backend: sentence_transformer   # sentence_transformer | hashing
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  dim: 256                        # dimensionality for the hashing backend
+  cache_dir: data/cache/embeddings
+
+retrieve:
+  method: cosine             # cosine | bm25 | hybrid
+  top_k: 5
+  hybrid_alpha: 0.5          # weight on the dense score in the hybrid (1 - alpha on BM25)
+
+generate:
+  backend: ollama            # ollama | callable (stub, injected in tests/notebooks)
+  base_url: http://localhost:11434
+  model_name: qwen2.5:0.5b
+  temperature: 0.0
+  max_tokens: 256
+  timeout: 120.0
+
+grounding:
+  groundedness_threshold: 0.3    # min fraction of answer content tokens found in context
+  retrieval_score_threshold: 0.15  # min top retrieval score to attempt an answer
+
+paths:
+  data_dir: data
+  corpus_file: data/corpus/corpus.json
+  figures_dir: outputs/figures

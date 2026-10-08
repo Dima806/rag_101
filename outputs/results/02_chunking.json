@@ -1,0 +1,77 @@
+{
+  "mode": "ollama:qwen2.5:0.5b",
+  "strategy_sweep": [
+    {
+      "chunker": "fixed",
+      "n_chunks": 16,
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "chunker": "sentence",
+      "n_chunks": 16,
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "chunker": "recursive",
+      "n_chunks": 16,
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "chunker": "semantic",
+      "n_chunks": 24,
+      "retrieval_recall": 1.0,
+      "answer_accuracy": 0.6666666666666666
+    }
+  ],
+  "size_sweep": [
+    {
+      "chunk_size": 30,
+      "n_chunks": 64,
+      "evidence_recall": 0.5,
+      "answer_accuracy": 0.3333333333333333
+    },
+    {
+      "chunk_size": 60,
+      "n_chunks": 34,
+      "evidence_recall": 1.0,
+      "answer_accuracy": 0.6666666666666666
+    },
+    {
+      "chunk_size": 120,
+      "n_chunks": 18,
+      "evidence_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "chunk_size": 240,
+      "n_chunks": 16,
+      "evidence_recall": 1.0,
+      "answer_accuracy": 1.0
+    },
+    {
+      "chunk_size": 400,
+      "n_chunks": 16,
+      "evidence_recall": 1.0,
+      "answer_accuracy": 1.0
+    }
+  ],
+  "mechanism": {
+    "doc": "doc01",
+    "answer_phrase": "Thornmouth",
+    "fixed_size_30_chunks": [
+      "The island of Volara is the ad",
+      "ministrative centre of the Zep",
+      "hyr Archipelago. Its capital c",
+      "ity is Thornmouth, which hosts",
+      " the Archipelago Assembly."
+    ],
+    "recursive_chunks": [
+      "The island of Volara is the administrative centre of the Zephyr Archipelago. Its capital city is Thornmouth, which hosts the Archipelago Assembly."
+    ],
+    "answer_intact_in_a_fixed30_chunk": true,
+    "answer_intact_in_a_recursive_chunk": true
+  }
+}

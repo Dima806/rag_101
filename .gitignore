@@ -218,3 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.llm/
+.agents/
+agent/
+.claude/skills/
+# rag_101: large model / embedding caches (regenerated locally; never commit).
+# The frozen corpus (data/corpus/) and placeholders stay tracked.
+data/cache/

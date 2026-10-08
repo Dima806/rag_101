@@ -1,0 +1,172 @@
+{
+  "documents": [
+    {
+      "doc_id": "doc01",
+      "text": "The island of Volara is the administrative centre of the Zephyr Archipelago. Its capital city is Thornmouth, which hosts the Archipelago Assembly."
+    },
+    {
+      "doc_id": "doc02",
+      "text": "Volara has a population of 48,000 residents and covers an area of 310 square kilometres."
+    },
+    {
+      "doc_id": "doc03",
+      "text": "The island of Myrelink is famous for its windmills. The tallest windmill, called the Graywing, stands 62 metres high."
+    },
+    {
+      "doc_id": "doc04",
+      "text": "Myrelink's economy depends on wind power. The Graywing windmill alone supplies electricity to roughly 4,000 homes."
+    },
+    {
+      "doc_id": "doc05",
+      "text": "Caldera Reef surrounds the volcanic island of Pelagos. Diving season on Caldera Reef runs from March to September."
+    },
+    {
+      "doc_id": "doc06",
+      "text": "Pelagos is the only island in the archipelago with an active volcano, Mount Sear, which last erupted in 1911."
+    },
+    {
+      "doc_id": "doc07",
+      "text": "The Zephyr Archipelago uses a single currency called the zeph. One zeph is divided into 100 breezes."
+    },
+    {
+      "doc_id": "doc08",
+      "text": "Ferries connect the islands daily. The fastest route, Thornmouth to Myrelink, takes 90 minutes by hydrofoil."
+    },
+    {
+      "doc_id": "doc09",
+      "text": "The archipelago's national bird is the silver tern, which nests exclusively on the cliffs of Pelagos."
+    },
+    {
+      "doc_id": "doc10",
+      "text": "Education in the archipelago is free until the age of 18. The oldest school, Thornmouth Academy, was founded in 1842."
+    },
+    {
+      "doc_id": "doc11",
+      "text": "The island of Suncrest grows most of the archipelago's citrus. Its orchards produce about 9,000 tonnes of oranges each year."
+    },
+    {
+      "doc_id": "doc12",
+      "text": "Suncrest holds the annual Citrus Festival every October, drawing visitors from across the archipelago."
+    },
+    {
+      "doc_id": "doc13",
+      "text": "The archipelago's highest point is the summit of Mount Sear, at 1,340 metres above sea level."
+    },
+    {
+      "doc_id": "doc14",
+      "text": "Rainfall is heaviest on Myrelink, which receives about 1,800 millimetres of rain per year."
+    },
+    {
+      "doc_id": "doc15",
+      "text": "The Archipelago Assembly has 60 members, elected every four years by the residents of all islands."
+    },
+    {
+      "doc_id": "doc16",
+      "text": "Freshwater on Suncrest comes from the Blue Spring, the largest natural spring in the archipelago."
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q01",
+      "text": "What is the capital city of Volara?",
+      "answer": "Thornmouth",
+      "gold_doc_ids": [
+        "doc01"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q02",
+      "text": "How tall is the Graywing windmill?",
+      "answer": "62 metres",
+      "gold_doc_ids": [
+        "doc03"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q03",
+      "text": "What currency does the Zephyr Archipelago use?",
+      "answer": "the zeph",
+      "gold_doc_ids": [
+        "doc07"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q04",
+      "text": "When did Mount Sear last erupt?",
+      "answer": "1911",
+      "gold_doc_ids": [
+        "doc06"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q05",
+      "text": "How many members does the Archipelago Assembly have?",
+      "answer": "60 members",
+      "gold_doc_ids": [
+        "doc15"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q06",
+      "text": "Where does the silver tern nest?",
+      "answer": "the cliffs of Pelagos",
+      "gold_doc_ids": [
+        "doc09"
+      ],
+      "kind": "answerable"
+    },
+    {
+      "question_id": "q07",
+      "text": "How many homes does the tallest windmill on Myrelink supply with electricity?",
+      "answer": "4,000 homes",
+      "gold_doc_ids": [
+        "doc03",
+        "doc04"
+      ],
+      "kind": "multi"
+    },
+    {
+      "question_id": "q08",
+      "text": "On which island is the archipelago's highest point located?",
+      "answer": "Pelagos",
+      "gold_doc_ids": [
+        "doc13",
+        "doc06"
+      ],
+      "kind": "multi"
+    },
+    {
+      "question_id": "q09",
+      "text": "What is the population of Myrelink?",
+      "answer": "The documents do not contain this information.",
+      "gold_doc_ids": [],
+      "kind": "absence"
+    },
+    {
+      "question_id": "q10",
+      "text": "Which island in the archipelago has an international airport?",
+      "answer": "The documents do not contain this information.",
+      "gold_doc_ids": [],
+      "kind": "absence"
+    },
+    {
+      "question_id": "q11",
+      "text": "How much does a ferry ticket between the islands cost?",
+      "answer": "The documents do not contain this information.",
+      "gold_doc_ids": [],
+      "kind": "absence"
+    },
+    {
+      "question_id": "q12",
+      "text": "What is the average summer temperature on Suncrest?",
+      "answer": "The documents do not contain this information.",
+      "gold_doc_ids": [],
+      "kind": "absence"
+    }
+  ]
+}

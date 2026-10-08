@@ -1,0 +1,56 @@
+{
+  "mode": "ollama:qwen2.5:0.5b",
+  "fabrications": [
+    {
+      "question": "What is the population of Myrelink?",
+      "fabricated_answer": "The population of Myrelink is 48,000.",
+      "groundedness": 1.0,
+      "model_self_abstained": false
+    },
+    {
+      "question": "Which island in the archipelago has an international airport?",
+      "fabricated_answer": "The island in the archipelago with an international airport is Thornmouth.",
+      "groundedness": 0.6,
+      "model_self_abstained": false
+    },
+    {
+      "question": "How much does a ferry ticket between the islands cost?",
+      "fabricated_answer": "The documents do not contain this information.",
+      "groundedness": 0.0,
+      "model_self_abstained": true
+    },
+    {
+      "question": "What is the average summer temperature on Suncrest?",
+      "fabricated_answer": "The documents do not contain this information.",
+      "groundedness": 0.0,
+      "model_self_abstained": true
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "groundedness_threshold": 0.0,
+      "abstention_on_absence": 0.5,
+      "accuracy_on_answerable": 1.0
+    },
+    {
+      "groundedness_threshold": 0.25,
+      "abstention_on_absence": 0.5,
+      "accuracy_on_answerable": 1.0
+    },
+    {
+      "groundedness_threshold": 0.5,
+      "abstention_on_absence": 0.5,
+      "accuracy_on_answerable": 1.0
+    },
+    {
+      "groundedness_threshold": 0.75,
+      "abstention_on_absence": 0.75,
+      "accuracy_on_answerable": 1.0
+    },
+    {
+      "groundedness_threshold": 1.0,
+      "abstention_on_absence": 0.75,
+      "accuracy_on_answerable": 1.0
+    }
+  ]
+}

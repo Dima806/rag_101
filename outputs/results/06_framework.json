@@ -1,0 +1,22 @@
+{
+  "mode": "ollama:qwen2.5:0.5b",
+  "retrieval_recall": 1.0,
+  "oracle_accuracy": 1.0,
+  "retrieved_accuracy": 1.0,
+  "abstention_naive": 0.5,
+  "abstention_grounded": 0.5,
+  "decision_table": [
+    {
+      "need": "Facts that live in documents and change often",
+      "use": "RAG"
+    },
+    {
+      "need": "Style, tone or output format",
+      "use": "Fine-tune (lora_101)"
+    },
+    {
+      "need": "Stable, simple, general knowledge",
+      "use": "Just prompt"
+    }
+  ]
+}
